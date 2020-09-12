@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Number Guessing Game</title>
+</head>
+
+<body>
+
+  <div class="game">
+
+    <div class="game-name">
+      <h1>Number Guessing Game</h1>
+    </div>
+
+    <div class="enter-number">
+      <input class="enter-number--input" type="text" id="number" autocomplete="off">
+      <button class="enter-number--button" id="guessButton">Enter</button>
+      <button class="enter-number--button" id="clearButton">Clear</button>
+    </div>
+
+    <div class="message" id="message">
+      Congratulations!! You guessed correctly
+      You have 3 gessses left
+    </div>
+
+    <div class="pass-guesses">
+      <h3 class="pass-guesses--title">
+        Pass Guesses
+      </h3>
+      <ul class="pass-guesses--list" id="pass-guesses--list">
+
+      </ul>
+    </div>
+
+    <div class="dialog hide">
+      <h2 class="dialog--message">GAME OVER</h2>
+      <button id="dialog--button" class="dialog--button">Play Again</button>
+    </div>
+
+    <div class="filter hide"></div>
+
+    <div class="notify hide">
+
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
